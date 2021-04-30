@@ -23,3 +23,12 @@ adb shell dumpsys deviceidle force-idl
 # Parar de forçar o modo Soneca
 adb shell dumpsys deviceidle unforce
 ```
+## O que aprender com esse projeto?
+Está começando com o android? 
+
+Além do alarme e o modo soneca, pode-se utilizar este projeto para estudar:
+
+1. Activities, e seu ciclo de vida (onCreate, startActivityForResult, onActivityResult). Mais informações. <a href="https://developer.android.com/guide/components/activities/activity-lifecycle">Documentação oficial</a> 
+1. Persistência em SharedPreferences. <a href="https://developer.android.com/reference/android/content/SharedPreferences">Documentação oficial</a>
+1. Utilização do Jackson para transformar Json em objeto e vice e versa. (Embora, atualmente, muita gente prefira utilizar o Gson).
+1. Como mostrar e cancelar uma notificação. <a href="https://developer.android.com/training/notify-user/build-notification">Documentação oficial</a>
