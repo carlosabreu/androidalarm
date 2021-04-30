@@ -27,7 +27,7 @@ class NotificationHelper {
             NotificationCompat.Builder(context, NOTIFICATION_CHANNEL)
                 .setContentTitle(NOTIFICATION_TITLE)
                 .setTicker(NOTIFICATION_TITLE)
-                .setSmallIcon(R.drawable.ic_launcher_foreground)
+                .setSmallIcon(R.drawable.ic_schedule_black_24dp)
                 .setOngoing(true)
                 .setContentIntent(createActivityPendingIntent(context, MainActivity::class.java))
                 .addAction(
