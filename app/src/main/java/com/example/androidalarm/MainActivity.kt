@@ -6,7 +6,6 @@ import android.text.TextUtils
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidalarm.databinding.ActivityMainBinding
-import com.example.androidalarm.util.SharedPreferenceDAO
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -83,7 +82,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun saveAlarmText(text: String) {
-        SharedPreferenceDAO<String>().save(this, text, SHARED_PREFERENCE_NAME)
+        SharedPreferenceDAO().saveString(this, text, SHARED_PREFERENCE_NAME)
     }
 
     private fun cancelAlarms() {
@@ -96,10 +95,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun reloadPreference() {
         setText(
-            SharedPreferenceDAO<String>().restoreAsObject(
+            SharedPreferenceDAO().restoreString(
                 this,
-                SHARED_PREFERENCE_NAME,
-                String::class.java
+                SHARED_PREFERENCE_NAME
             )
         )
     }
