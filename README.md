@@ -18,7 +18,7 @@ Para testar o modo Soneca(doze) podemos utilizar comandos do adb:
 
 ```
 # Forçar o modo Soneca 
-adb shell dumpsys deviceidle force-idl 
+adb shell dumpsys deviceidle force-idle
 
 # Parar de forçar o modo Soneca
 adb shell dumpsys deviceidle unforce
